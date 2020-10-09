@@ -22,6 +22,10 @@ public class JDBC_TEST {
             throw e;
         }
 
+        
+        
+        
+        
         // Connection（データベースとの接続を表す）、PreparedStatement（発行するSQLを表す）を、それぞれ生成します。
         try (Connection connection = DriverManager.getConnection(URL);
                 PreparedStatement statement = connection.prepareStatement("select * from user")) {
